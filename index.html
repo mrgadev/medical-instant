@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+		<!-- Google Icons -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+		<!-- Bootstrap Icons -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+		<style>
+			
+			header {
+				background: url('assets/background.png');
+				background-size: cover;
+				background-repeat: no-repeat;
+				height: 100vh;
+			}
+			
+			header .hero {
+				position: absolute;
+				top: 40vh;
+			}
+			
+			.join-us-btn {
+				background: #FF6551;
+				border: none;
+				outline: none;
+				transition: all 0.4s ease;
+			}
+			
+			.join-us-btn:hover {
+				background: #cc5141;
+				transition: all 0.4s ease;
+			}
+			
+			.practice-card {
+				transition: all 0.4s ease;
+			}
+			
+			.practice-card:hover {
+				transform: translateY(35px);
+				cursor: pointer;
+				transition: all 0.4s ease;
+			}
+			
+			footer ul li {
+				list-style: none;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+		</style>
+  </head>
+  <body>
+   	<!-- Header Section-->
+   	<header>
+   		<nav class="navbar navbar-expand-lg bg-transparent">
+				<div class="container py-3">
+					<a class="navbar-brand fw-bold text-light" href="#">Medical Instant</a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+							  <a class="nav-link text-light" aria-current="page" href="#">Home</a>
+							</li>
+							<li class="nav-item">
+							  <a class="nav-link text-light" href="#">Product</a>
+							</li>
+							<li class="nav-item">
+							  <a class="nav-link text-light" aria-disabled="true">Pricing</a>
+							</li>
+							<li class="nav-item">
+							  <a class="nav-link text-light" aria-disabled="true">Contact</a>
+							</li>
+						</ul>
+						<section class="login-button">
+							<button class="btn bg-transparent px-4 py-3 text-light fw-bold">Login</button>
+							<button class="text-uppercase join-us-btn px-4 py-3 text-light fw-bold rounded">join us</button>
+						</section>
+					</div>
+				</div>
+			</nav>
+			
+			<!-- Hero Section -->
+			<section class="hero container-fluid d-flex flex-column align-items-center justify-content-center gap-4">
+				<p class="fw-bold" style="color:#FF6551;">Join Us</p>
+				<h1 class="fw-bold text-light fs-1">A Great Place to Receive Care</h1>
+				<p class="text-light fs-5">Medical Instant is most focused in helping you discover your most beauiful smile</p>
+				<button class="text-capitalize join-us-btn px-4 py-3 text-light fw-bold rounded">join us</button>
+			</section>
+   	</header>
+ 		
+		
+		<!-- Main Section -->
+		<main style="background:#26335D">
+			<div class="separator py-5 d-none d-lg-block"></div>
+			<!-- Practice Section -->
+			<section class="practice d-flex flex-column container py-5 gap-4">
+				<div class="practice-top mt-3 col-6">
+					<p class="fw-bold" style="color:#FF6551;">Practice Advice</p>
+					<h2 class="fw-bold text-light" style="font-size: 40px;">The Best Reference</h2>
+					<p class="text-light fw-medium">Problems trying to resolve the conflict between<br>
+the two major realms of Classical physics: Newtonian mechanics </p>
+				</div>
+				
+				<!-- Practice Cards Section (XL) -->
+				<div class="practice-cards row gap-4 h-100">
+					<div class="col-lg">
+						<!-- Individual Practice card -->
+						<div class="practice-card p-4 bg-light rounded gap-4">
+							<img src="assets/heart-icon.png" class="mb-3">
+							<h5 class="fw-bold">Book now</h5>
+							<hr class="border border-danger w-25 opacity-100">
+							<p class="text-secondary">The gradual accumulation of information about</p>
+						</div>					
+					</div>
+					
+					<div class="col-lg">					
+						<!-- Individual Practice card -->
+						<div class="practice-card  p-4 bg-light rounded">
+							<img src="assets/stetoscope.png" class="mb-3">
+							<h5 class="fw-bold">Online Appointment</h5>
+							<hr class="border border-danger opacity-100 w-25">
+							<p class="text-secondary">The gradual accumulation of information about</p>
+						</div>
+					</div>
+					
+					<div class="col-lg">					
+						<!-- Individual Practice card -->
+						<div class="practice-card p-4 rounded text-light" style="background:#FF6551;">
+							<img src="assets/clipboard.png" class="mb-3">
+							<h5 class="fw-bold">Quick examination</h5>
+							<hr class="border border-light opacity-100 w-25">
+							<p>The gradual accumulation of information about</p>
+						</div>
+					</div>
+					
+					<div class="col-lg">
+						<!-- Individual Practice card -->
+						<div class="practice-card align-self-end p-4 bg-light rounded gap-4">
+							<img src="assets/surgery.png" class="mb-3">
+							<h5 class="fw-bold">Best dental surgeons</h5>
+							<hr class="border border-danger w-25 opacity-100">
+							<p class="text-secondary">The gradual accumulation of information about</p>
+						</div>					
+					</div>
+				</div>
+		
+			</section>
+			<div class="separator py-5"></div>
+			<div class="separator py-5 d-none d-lg-block"></div>
+			<!-- Our Doctors Section-->
+			<section class="our-doctors container py-5">
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<img src="assets/doctor.png" class="img-fluid">
+					</div>
+					<div class="col-12 col-md-5 d-flex flex-column gap-5 justify-content-center">
+						<hr class="border borderdanger w-25 opacity-100">
+						<h2 class="fw-bold text-light">Our Doctors Specialize in you</h2>
+						<p class="text-light">Problems trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
+						<button class="btn bg-transparent text-danger opacity-100 d-flex flex-row gap-2 align-items-center px-0 fw-bold">Learn More <span class="material-symbols-outlined">chevron_right</span></button>
+					</div>
+				</div>
+			</section>
+			
+			<!-- Courses Section -->
+			<section class="courses d-flex flex-column container py-5 gap-4">
+				<div class="courses-top mt-3 col-6">
+					<p class="fw-bold" style="color:#FF6551;">Courses</p>
+					<h2 class="fw-bold text-light" style="font-size: 40px;">Leading Medicine</h2>
+					<p class="text-light fw-medium">Problems trying to resolve the conflict between<br>
+the two major realms of Classical physics: Newtonian mechanics </p>
+				</div>
+				
+				<!-- Practice Cards Section (XL) -->
+				<div class="row d-flex gap-4 h-100">
+					<!-- Individual Practice card -->
+					<div class="col-lg">
+						<div class="courses-card bg-light">
+							<div class="course-card-header p-0 m-0 position-relative">						
+								<img src="assets/drugs.png" class="w-100">
+								<span class="badge bg-danger fw-bold position-absolute top-0 start-0 m-4 fs-6 py-2 px-3">Sale</span>
+								<div class="d-flex flex-row gap-2 position-absolute bottom-0 ms-5 ps-4 mb-3">
+									<span class="material-symbols-outlined p-3 rounded-circle bg-light text-black">favorite</span>
+									<span class="material-symbols-outlined p-3 rounded-circle bg-light text-black">shopping_cart</span>
+									<span class="material-symbols-outlined p-3 rounded-circle bg-light text-black">visibility</span>
+								</div>
+							</div>
+							<div class="course-card-body p-4">						
+								<div class="category-rating d-flex flex-row justify-content-between align-items-center my-2">
+									<p class="fw-bold text-danger opacity-100">Best dental surgeons</p>
+									<span class="badge rounded-pill text-light fw-bold px-3 py-2 d-flex flex-row align-items-center gap-1" style="background: #223b75;"><span class="material-symbols-outlined text-warning fs-6">star</span> 4.9</span>
+								</div>
+								<h5 class="fw-bold mt-3">sit amet nulla facilisi morbi</h5>
+								<p class="text-secondary">We focus on ergonomics and meeting you....</p>
+								<p class="text-secondary fw-bold d-flex flex-row align-items-center gap-2">
+									<span class="material-symbols-outlined fw-medium me-2">download</span>
+									15 Sales
+								</p>
+								<p class="prices d-flex flex-row gap-1 fw-bold">
+									<span class="text-secondary">$16.48</span>
+									<span style="color: #223b75">$6.48</span>
+								</p>
+								<button class="btn btn-outline-danger opacity-100 fw-bold rounded-pill px-3 py-2 d-flex flex-row align-items-center gap-2">Learn More <span class="material-symbols-outlined">chevron_right</span></button>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Individual Practice card -->
+					<div class="col-lg">
+						<div class="courses-card bg-light rounded gap-4">
+							<div class="course-card-header p-0 m-0 position-relative">						
+								<img src="assets/surgery-room.png" class="w-100">
+								<span class="badge bg-danger fw-bold position-absolute top-0 start-0 m-4 fs-6 py-2 px-3">Sale</span>
+								<div class="d-flex flex-row gap-2 position-absolute bottom-0 ms-5 ps-4 mb-3">
+									<span class="material-symbols-outlined p-3 rounded-circle bg-light text-black">favorite</span>
+									<span class="material-symbols-outlined p-3 rounded-circle bg-light text-black">shopping_cart</span>
+									<span class="material-symbols-outlined p-3 rounded-circle bg-light text-black">visibility</span>
+								</div>
+							</div>
+							<div class="course-card-body p-4">						
+								<div class="category-rating d-flex flex-row justify-content-between align-items-center my-2">
+									<p class="fw-bold text-danger opacity-100">Quick examination</p>
+									<span class="badge rounded-pill text-light fw-bold px-3 py-2 d-flex flex-row align-items-center gap-1" style="background: #223b75;"><span class="material-symbols-outlined text-warning fs-6">star</span> 4.9</span>
+								</div>
+								<h5 class="fw-bold my-4">bibendum arcu vitae</h5>
+								<p class="text-secondary">We focus on ergonomics and meeting you....</p>
+								<p class="text-secondary fw-bold d-flex flex-row align-items-center gap-2">
+									<span class="material-symbols-outlined fw-medium me-2">download</span>
+									15 Sales
+								</p>
+								<p class="prices d-flex flex-row gap-1 fw-bold">
+									<span class="text-secondary">$16.48</span>
+									<span style="color: #223b75">$6.48</span>
+								</p>
+								<button class="btn btn-outline-danger opacity-100 fw-bold rounded-pill px-3 py-2 d-flex flex-row align-items-center gap-2">Learn More <span class="material-symbols-outlined">chevron_right</span></button>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Individual Practice card -->
+					<div class="col-lg">
+						<div class="courses-card bg-light rounded">
+							<div class="course-card-header p-0 m-0 position-relative">						
+								<img src="assets/drugs-pill.png" class="w-100">
+								<span class="badge bg-danger fw-bold position-absolute top-0 start-0 m-4 fs-6 py-2 px-3">Sale</span>
+								<div class="d-flex flex-row gap-2 position-absolute bottom-0 ms-5 ps-4 mb-3">
+									<span class="material-symbols-outlined p-3 rounded-circle bg-light text-black">favorite</span>
+									<span class="material-symbols-outlined p-3 rounded-circle bg-light text-black">shopping_cart</span>
+									<span class="material-symbols-outlined p-3 rounded-circle bg-light text-black">visibility</span>
+								</div>
+							</div>
+							<div class="course-card-body p-4">						
+								<div class="category-rating d-flex flex-row justify-content-between align-items-center my-2">
+									<p class="fw-bold text-danger opacity-100">Online Appoinment</p>
+									<span class="badge rounded-pill text-light fw-bold px-3 py-2 d-flex flex-row align-items-center gap-1" style="background: #223b75;"><span class="material-symbols-outlined text-warning fs-6">star</span> 4.9</span>
+								</div>
+								<h5 class="fw-bold mt-3">magna fringilla urna porttitor </h5>
+								<p class="text-secondary">We focus on ergonomics and meeting you....</p>
+								<p class="text-secondary fw-bold d-flex flex-row align-items-center gap-2">
+									<span class="material-symbols-outlined fw-medium me-2">download</span>
+									15 Sales
+								</p>
+								<p class="prices d-flex flex-row gap-1 fw-bold">
+									<span class="text-secondary">$16.48</span>
+									<span style="color: #223b75">$6.48</span>
+								</p>
+								<button class="btn btn-outline-danger opacity-100 fw-bold rounded-pill px-3 py-2 d-flex flex-row align-items-center gap-2">Learn More <span class="material-symbols-outlined">chevron_right</span></button>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Individual Practice card -->
+					<div class="col-lg">					
+						<div class="courses-card bg-light rounded gap-4">
+							<div class="course-card-header p-0 m-0 position-relative">						
+								<img src="assets/corona.png" class="w-100">
+								<span class="badge bg-danger fw-bold position-absolute top-0 start-0 m-4 fs-6 py-2 px-3">Sale</span>
+								<div class="d-flex flex-row gap-2 position-absolute bottom-0 ms-5 ps-4 mb-3">
+									<span class="material-symbols-outlined p-3 rounded-circle bg-light text-black">favorite</span>
+									<span class="material-symbols-outlined p-3 rounded-circle bg-light text-black">shopping_cart</span>
+									<span class="material-symbols-outlined p-3 rounded-circle bg-light text-black">visibility</span>
+								</div>
+							</div>
+							<div class="course-card-body p-4">						
+								<div class="category-rating d-flex flex-row justify-content-between align-items-center my-2">
+									<p class="fw-bold text-danger opacity-100">Book now</p>
+									<span class="badge rounded-pill text-light fw-bold px-3 py-2 d-flex flex-row align-items-center gap-1" style="background: #223b75;"><span class="material-symbols-outlined text-warning fs-6">star</span> 4.9</span>
+								</div>
+								<h5 class="fw-bold mt-3">magna fringilla urna porttitor</h5>
+								<p class="text-secondary">We focus on ergonomics and meeting you....</p>
+								<p class="text-secondary fw-bold d-flex flex-row align-items-center gap-2">
+									<span class="material-symbols-outlined fw-medium me-2">download</span>
+									15 Sales
+								</p>
+								<p class="prices d-flex flex-row gap-1 fw-bold">
+									<span class="text-secondary">$16.48</span>
+									<span style="color: #223b75">$6.48</span>
+								</p>
+								<button class="btn btn-outline-danger opacity-100 fw-bold rounded-pill px-3 py-2 d-flex flex-row align-items-center gap-2">Learn More <span class="material-symbols-outlined">chevron_right</span></button>
+							</div>
+						</div>
+					</div>
+			</section>
+			<div class="separator py-5 d-none d-lg-block"></div>
+			<!-- Price Section -->
+			<section class="courses d-flex flex-column container py-5 gap-4">
+				<div class="courses-top mt-3 col-6">
+					<p class="fw-bold text-danger opacity-100">Practice Advice</p>
+					<h2 class="fw-bold text-light" style="font-size: 40px;">Pricing</h2>
+					<p class="text-light fw-medium">Problems trying to resolve the conflict between<br>
+the two major realms of Classical physics: Newtonian mechanics </p>
+				</div>
+				<!-- Cards Container -->
+				<div class="container">
+					<!-- Cards Row-->
+					<div class="row gap-4">
+						<!-- Single Card-->
+						<div class="col-lg">		
+							<!-- Card COntent-->				
+							<div class="p-5 d-flex flex-column gap-4 bg-light rounded">
+								<span class="material-symbols-outlined badge w-25 p-3 fs-1 text-light bg-danger opacity-100 rounded-circle">favorite</span>
+								<h1 class="fw-bold text-uppercase">free</h1>
+								<h5 class="fw-bold text-secondary">Organize across all apps by hand</h5>
+								<!-- Price Section-->
+								<div class="d-flex flex-column">
+									<span class="fs-1 text-danger opacity-100 fw-bold">19$</span>
+									<span class="fw-bold text-primary opacity-50">Per Month</span>
+								</div>
+								<button class="btn btn-danger opacity-100 text-light fw-bold w-100 py-3">Try for free</button>
+								<!-- Course Feature Lists -->
+								<ul class="ps-0 ms-0 d-flex flex-column gap-4">
+									<li class="d-flex flex-row gap-2 align-items-center">
+										<span class="material-symbols-outlined text-success fs-1">check_circle</span>
+										<span class="fw-bold fs-5">Unlimited product updates</span>
+									</li>
+									<li class="d-flex flex-row gap-2 align-items-center">
+										<span class="material-symbols-outlined text-success fs-1">check_circle</span>
+										<span class="fw-bold fs-5">Unlimited product updates</span>
+									</li>
+									<li class="d-flex flex-row gap-2 align-items-center">
+										<span class="material-symbols-outlined text-success fs-1">check_circle</span>
+										<span class="fw-bold fs-5">Unlimited product updates</span>
+									</li>
+									<li class="d-flex flex-row gap-2 align-items-center">
+										<span class="material-symbols-outlined text-secondary fs-1">check_circle</span>
+										<span class="fw-bold fs-5">1GB Cloud storage</span>
+									</li>
+									<li class="d-flex flex-row gap-2 align-items-center">
+										<span class="material-symbols-outlined text-secondary fs-1">check_circle</span>
+										<span class="fw-bold fs-5">Email and community support</span>
+									</li>
+									
+								</ul>
+							</div>
+						</div>
+						
+						<!-- Single Card-->
+						<div class="col-lg">		
+							<!-- Card COntent-->				
+							<div class="p-5 d-flex flex-column gap-4 bg-light rounded position-relative">
+								<span class="badge bg-danger opacity-100 text-light fw-bold fs-4 position-absolute top-0 translate-middle start-100 rounded-circle py-4 px-2">New</span>
+								<span class="material-symbols-outlined badge w-25 p-3 fs-1 text-light bg-danger opacity-100 rounded-circle">favorite</span>
+								<h1 class="fw-bold text-uppercase">free</h1>
+								<h5 class="fw-bold text-secondary">Organize across all apps by hand</h5>
+								<!-- Price Section-->
+								<div class="d-flex flex-column">
+									<span class="fs-1 text-danger opacity-100 fw-bold">19$</span>
+									<span class="fw-bold text-primary opacity-50">Per Month</span>
+								</div>
+								<button class="btn btn-danger opacity-100 text-light fw-bold w-100 py-3">Try for free</button>
+								<!-- Course Feature Lists -->
+								<ul class="ps-0 ms-0 d-flex flex-column gap-4">
+									<li class="d-flex flex-row gap-2 align-items-center">
+										<span class="material-symbols-outlined text-success fs-1">check_circle</span>
+										<span class="fw-bold fs-5">Unlimited product updates</span>
+									</li>
+									<li class="d-flex flex-row gap-2 align-items-center">
+										<span class="material-symbols-outlined text-success fs-1">check_circle</span>
+										<span class="fw-bold fs-5">Unlimited product updates</span>
+									</li>
+									<li class="d-flex flex-row gap-2 align-items-center">
+										<span class="material-symbols-outlined text-success fs-1">check_circle</span>
+										<span class="fw-bold fs-5">Unlimited product updates</span>
+									</li>
+									<li class="d-flex flex-row gap-2 align-items-center">
+										<span class="material-symbols-outlined text-secondary fs-1">check_circle</span>
+										<span class="fw-bold fs-5">1GB Cloud storage</span>
+									</li>
+									<li class="d-flex flex-row gap-2 align-items-center">
+										<span class="material-symbols-outlined text-secondary fs-1">check_circle</span>
+										<span class="fw-bold fs-5">Email and community support</span>
+									</li>
+									
+								</ul>
+							</div>
+						</div>
+						
+						<!-- Single Card-->
+						<div class="col-lg">		
+							<!-- Card COntent-->				
+							<div class="p-5 d-flex flex-column gap-4 bg-light rounded">
+								<span class="material-symbols-outlined badge w-25 p-3 fs-1 text-light bg-danger opacity-100 rounded-circle">favorite</span>
+								<h1 class="fw-bold text-uppercase">free</h1>
+								<h5 class="fw-bold text-secondary">Organize across all apps by hand</h5>
+								<!-- Price Section-->
+								<div class="d-flex flex-column">
+									<span class="fs-1 text-danger opacity-100 fw-bold">19$</span>
+									<span class="fw-bold text-primary opacity-50">Per Month</span>
+								</div>
+								<button class="btn btn-danger opacity-100 text-light fw-bold w-100 py-3">Try for free</button>
+								<!-- Course Feature Lists -->
+								<ul class="ps-0 ms-0 d-flex flex-column gap-4">
+									<li class="d-flex flex-row gap-2 align-items-center">
+										<span class="material-symbols-outlined text-success fs-1">check_circle</span>
+										<span class="fw-bold fs-5">Unlimited product updates</span>
+									</li>
+									<li class="d-flex flex-row gap-2 align-items-center">
+										<span class="material-symbols-outlined text-success fs-1">check_circle</span>
+										<span class="fw-bold fs-5">Unlimited product updates</span>
+									</li>
+									<li class="d-flex flex-row gap-2 align-items-center">
+										<span class="material-symbols-outlined text-success fs-1">check_circle</span>
+										<span class="fw-bold fs-5">Unlimited product updates</span>
+									</li>
+									<li class="d-flex flex-row gap-2 align-items-center">
+										<span class="material-symbols-outlined text-secondary fs-1">check_circle</span>
+										<span class="fw-bold fs-5">1GB Cloud storage</span>
+									</li>
+									<li class="d-flex flex-row gap-2 align-items-center">
+										<span class="material-symbols-outlined text-secondary fs-1">check_circle</span>
+										<span class="fw-bold fs-5">Email and community support</span>
+									</li>
+									
+								</ul>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</section>
+			
+			<!-- Price Section -->
+			<section class="testimonial d-flex flex-column container py-5 gap-4">
+				<div class="newsletter-top mt-3 col-6">
+					<p class="fw-bold text-danger opacity-100">Testimonials</p>
+					<h2 class="fw-bold text-light" style="font-size: 40px;">Our Experts</h2>
+					<p class="text-light fw-medium">Problems trying to resolve the conflict between<br>
+the two major realms of Classical physics: Newtonian mechanics </p>
+				</div>
+				<!-- Cards Container -->
+				<div class="container">
+					<!-- Cards Row-->
+					<div class="row gap-4">
+						
+						<!-- Single Card-->
+						<div class="col-lg">		
+							<!-- Card COntent-->				
+							<div class="p-5 d-flex flex-column justify-content-center align-items-center gap-4 bg-light rounded position-relative">
+								<img src="assets/client-1.png" class="w-25">
+								<p class="fw-semibold fs-4 text-secondary text-center">Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+								<div class="d-flex flex-row gap-2 text-warning opacity-100 fs-4">
+									<i class="bi bi-star-fill"></i>
+									<i class="bi bi-star-fill"></i>
+									<i class="bi bi-star-fill"></i>
+									<i class="bi bi-star-fill"></i>
+									<i class="bi bi-star"></i>
+								</div>
+								<p class="fw-bold fs-4">Regina Miles</p>
+								<p class="fw-bold fs-4 text-secondary">Designer</p>
+							</div>
+						</div>
+						
+						<!-- Single Card-->
+						<div class="col-lg">		
+							<!-- Card COntent-->				
+							<div class="p-5 d-flex flex-column justify-content-center align-items-center gap-4 bg-light rounded fs-4">
+								<img src="assets/client-2.png" class="w-25">
+								<p class="fw-semibold text-secondary text-center">Slate helps you see how many more days you need to work to reach your financial goal for the month and year.</p>
+								<div class="d-flex flex-row gap-2 text-warning opacity-100">
+									<i class="bi bi-star-fill"></i>
+									<i class="bi bi-star-fill"></i>
+									<i class="bi bi-star-fill"></i>
+									<i class="bi bi-star-fill"></i>
+									<i class="bi bi-star"></i>
+								</div>
+								<p class="fw-bold">Regina Miles</p>
+								<p class="fw-bold text-secondary">Designer</p>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</section>
+			<div class="py-5 separator"></div>
+			<!-- Newsletter Section -->
+			<section class="newsletter d-flex flex-column gap-4 container align-items-center justify-content-center">
+				<div class="newsletter-top mt-3 text-center">
+					<p class="fw-bold text-danger opacity-100">Newsletter</p>
+					<h2 class="fw-bold text-light" style="font-size: 40px;">Join Us</h2>
+					<p class="text-light fw-medium">Problems trying to resolve the conflict between<br>
+the two major realms of Classical physics: Newtonian mechanics </p>
+				</div>
+				
+				<div class="input-group mb-3 w-75" style="height:60px;">
+					<input type="text" class="form-control px-4 fs-5 fw-semibold" placeholder="Your Email" aria-label="Recipient's username" aria-describedby="button-addon2">
+					<button class="btn btn-danger opacity-100 text-light fw-bold border border-2 h-100" style="width: 115px; type="button" id="button-addon2">Subscribe</button>
+				</div>
+			</section>
+			<div class="py-5 separator"></div>
+			<div class="py-5 separator"></div>
+			<!--Footer Section -->
+			<footer class="container">
+				<div class="row gap-4">
+					<!-- Company Info Section -->
+					
+					<div class="col-lg">
+						<div class="company-info d-flex flex-column gap-4">
+							<h4 class="text-light fw-bold">Company Info</h4>
+							<ul class="text-light d-flex flex-column gap-3 ps-0 ms-0">
+								<li><a href="#" class="text-light fw-semibold">About Us</a></li>
+								<li><a href="#" class="text-light fw-semibold">Carrier</a></li>
+								<li><a href="#" class="text-light fw-semibold">We are hiring</a></li>
+								<li><a href="#" class="text-light fw-semibold">Blog</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="col-lg">
+						<div class="legal d-flex flex-column gap-4">
+							<h4 class="text-light fw-bold">Legal</h4>
+							<ul class="text-light d-flex flex-column gap-3 ps-0 ms-0">
+								<li><a href="#" class="text-light fw-semibold">About Us</a></li>
+								<li><a href="#" class="text-light fw-semibold">Carrier</a></li>
+								<li><a href="#" class="text-light fw-semibold">We are hiring</a></li>
+								<li><a href="#" class="text-light fw-semibold">Blog</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="col-lg">
+						<div class="features d-flex flex-column gap-4">
+							<h4 class="text-light fw-bold">Features</h4>
+							<ul class="text-light d-flex flex-column gap-3 ps-0 ms-0">
+								<li><a href="#" class="text-light fw-semibold">Business Marketing</a></li>
+								<li><a href="#" class="text-light fw-semibold">User Analytic</a></li>
+								<li><a href="#" class="text-light fw-semibold">Live Chat</a></li>
+								<li><a href="#" class="text-light fw-semibold">Unlimited Support</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="col-lg">
+						<div class="resources d-flex flex-column gap-4">
+							<h4 class="text-light fw-bold">Resources</h4>
+							<ul class="text-light d-flex flex-column gap-3 ps-0 ms-0">
+								<li><a href="#" class="text-light fw-semibold">iOS & Android</a></li>
+								<li><a href="#" class="text-light fw-semibold">Watch a Demo</a></li>
+								<li><a href="#" class="text-light fw-semibold">Customers</a></li>
+								<li><a href="#" class="text-light fw-semibold">API</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="col-lg">
+						<div class="get-in-touch d-flex flex-column gap-4">
+							<h4 class="text-light fw-bold">Get In Touch</h4>
+							<ul class="text-light d-flex flex-column gap-3 ps-0 ms-0">
+								<li class="d-flex flex-row align-items-center gap-2"><i class="bi bi-telephone fs-5"></i><a href="#" class="text-light fw-semibold">(480) 555-0103</a></li>
+								<li class="d-flex flex-row align-items-center gap-2"><i class="bi bi-geo-alt fs-5"></i> <a href="#" class="text-light fw-semibold">4517 Washington Ave. Manchester, Kentucky 39495</a></li>
+								<li class="d-flex flex-row align-items-center gap-2"><i class="bi bi-envelope-fill fs-5"></i><a href="#" class="text-light fw-semibold">debra.holt@example.com</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<div class="py-5 separator"></div>
+		</main>
+		<!-- Copyright Section -->
+		<section class="copyright container d-flex flex-column flex-lg-row justify-content-between align-items-center py-4">
+			<p class="fw-bold text-secondary">&copy; 2024. Pondok Informatika Al Madinah</p>
+			<div class="d-flex flex-row gap-4 fs-4">
+				<a href="https://facebook.com" target="_blank" class="text-danger opacity-80"><i class="bi bi-facebook"></i></a>
+				<a href="https://instagram.com" target="_blank" class="text-danger opacity-80"><i class="bi bi-instagram"></i></a>
+				<a href="https://twitter.com" target="_blank" class="text-danger opacity-80"><i class="bi bi-twitter"></i></a>
+			</div>
+		</section>
+    
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+		
+		<script>
+			$("#navbarSupportedContent a:not(.dropdown-toggle)").click(function() {
+  	    $("#navbarSupportedContent").collapse("hide");
+	    });
+	   </script>
+  </body>
+</html>	 
